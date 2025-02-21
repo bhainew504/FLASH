@@ -107,7 +107,7 @@ def save_resellers():
 def generate_key(duration):
     characters = string.ascii_letters + string.digits
     random_part = ''.join(random.choice(characters) for _ in range(10)).upper()
-    return f"KING-{duration.upper()}-{random_part}"
+    return f"FLaSH-{duration.upper()}-{random_part}"
 
 def add_time_to_current_date(hours=0):
     return (datetime.datetime.now() + datetime.timedelta(hours=hours)).strftime('%Y-%m-%d %H:%M:%S')
@@ -1020,7 +1020,7 @@ def confirm_reseller_key(call):
     cost = KEY_COSTS[days]
 
     if user_id not in resellers or resellers[user_id]["coins"] < cost:
-        bot.edit_message_text("❌ 𝗜𝗻𝘀𝘂𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁 𝗖𝗼𝗶𝗻𝘀!", call.message.chat.id, call.message.message_id)
+        bot.edit_message_text("❌ 𝗜𝗻𝘀𝘂𝗳𝗳𝗶𝗰𝗶𝗲??𝘁 𝗖𝗼𝗶𝗻𝘀!", call.message.chat.id, call.message.message_id)
         return
 
     resellers[user_id]["coins"] -= cost
