@@ -107,7 +107,7 @@ def save_resellers():
 def generate_key(duration):
     characters = string.ascii_letters + string.digits
     random_part = ''.join(random.choice(characters) for _ in range(10)).upper()
-    return f"FLaSH-{duration.upper()}-{random_part}"
+    return f"FLASH-{duration.upper()}-{random_part}"
 
 def add_time_to_current_date(hours=0):
     return (datetime.datetime.now() + datetime.timedelta(hours=hours)).strftime('%Y-%m-%d %H:%M:%S')
