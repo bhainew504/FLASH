@@ -927,7 +927,7 @@ def process_redeem_key(message):
             user_binary = f"{BINARY}{user_id}"  
             shutil.copy(original_binary, user_binary)
 
-            bot.reply_to(message, f"✅ 𝗔𝗰𝗰𝗲𝘀𝘀 𝗴𝗿𝗮𝗻𝘁𝗲𝗱 𝘂𝗻𝘁𝗶𝗹:\n\n‼️𝑬𝑿𝑷𝑹𝑰𝑬 𝑶𝑵 :- {convert_utc_to_ist(users[user_id])}")
+            bot.reply_to(message, f"✅ 𝗔𝗰𝗰𝗲𝘀𝘀 𝗴𝗿𝗮𝗻𝘁𝗲𝗱 𝘂𝗻𝘁𝗶𝗹:\n\n‼️𝑬𝑿𝑷𝑹𝑰𝑬 𝑶𝑵 :- {convert_utc_to_ist(users[user_id])} ‼️")
         else:
             bot.reply_to(message, "📛 𝗞𝗲𝘆 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝘂𝘀𝗲𝗱 📛")
     else:
